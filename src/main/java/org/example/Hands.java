@@ -21,7 +21,7 @@ public class Hands {
                 System.out.print("Please type numbers only.Try again:\n How many AI players do you want? Enter 1, 2, or 3.\n");
                 numberofAIPlayers = keyboard.nextLine();
             }
-            while( Integer.parseInt(numberofAIPlayers) <0 || Integer.parseInt(numberofAIPlayers) >3){
+            while( Integer.parseInt(numberofAIPlayers) <= 0 || Integer.parseInt(numberofAIPlayers) >3){
                 System.out.print("Please type numbers between 1 an 3.Try again:\n How many AI players do you want? Enter 1, 2, or 3.\n");
                 numberofAIPlayers = keyboard.nextLine();
                 while (!numberofAIPlayers.matches("[0-9]+")) {
@@ -434,7 +434,7 @@ public class Hands {
             System.out.print("Please type numbers only.\nHow many cards would you like to discard?\n");
             howManyCardsToSwap = keyboard.nextLine();
         }
-        while( Integer.parseInt(howManyCardsToSwap) <0 || Integer.parseInt(howManyCardsToSwap) >3){
+        while( Integer.parseInt(howManyCardsToSwap) <= 0 || Integer.parseInt(howManyCardsToSwap) >3){
             System.out.print("Please type numbers between 1 an 5.Try again:\nHow many cards would you like to discard?\n");
             howManyCardsToSwap = keyboard.nextLine();
             while (!howManyCardsToSwap.matches("[0-9]+")) {
@@ -453,7 +453,7 @@ public class Hands {
                 System.out.print("Please type numbers only.Try again:\n Enter 1 card at a time.\n");
                 cardToSwap = keyboard.nextLine();
             }
-            while( Integer.parseInt(cardToSwap) <0 || Integer.parseInt(cardToSwap) >5){
+            while( Integer.parseInt(cardToSwap) <= 0 || Integer.parseInt(cardToSwap) >5){
                 System.out.print("Please type numbers between 1 an 5.Try again:\n Enter 1 card at a time.\n");
                 cardToSwap = keyboard.nextLine();
                 while (!cardToSwap.matches("[0-9]+")) {
